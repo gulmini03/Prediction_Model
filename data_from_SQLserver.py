@@ -6,15 +6,15 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 # Database connection parameters
-server = 'DESKTOP-7DRN7EE'
-database = 'NALCO_GUL'
+server = 'enter server name'
+database = 'enter database name'
 trusted_connection = 'yes' 
 
 # Establish a connection to the SQL Server database using Windows Authentication
 conn = pyodbc.connect(f'DRIVER={{SQL Server}};SERVER={server};DATABASE={database};Trusted_Connection={trusted_connection}')
 
 # SQL query to select data
-query = 'SELECT * FROM sampledata'
+query = 'SELECT * FROM table_name'
 
 # Fetch data from SQL Server into pandas DataFrame
 data = pd.read_sql(query, conn)
