@@ -1,4 +1,4 @@
-#Employee Leave Prediction Project**
+#Employee Leave Prediction Project
 
 **Overview:**
 This project builds a predictive model to forecast the number of leaves employees will take in a specific month using historical leave data stored in a SQL Server database.
